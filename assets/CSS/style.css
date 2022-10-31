@@ -29,3 +29,10 @@
     font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
     color: #2315b3;
 }
+
+#addBookButtonDiv {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}

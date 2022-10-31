@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.magic--button--animation {
+    border: 3px solid #115ae0;
+    font-size: 30px;
+    color: #115ae0;
+    width: 45vw;
+    height: 60px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+    padding: 4px 52px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.magic--button--animation::before,
+.magic--button--animation::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #115ae0;
+    top: 0;
+    left: -100%;
+    opacity: .5;
+    transition: .3s;
+    z-index: -1;
+}
+
+.magic--button--animation::after {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.magic--button--animation:hover {
+    color: #ffffff;
+    z-index: 1;
+}
+
+.magic--button--animation:hover::before,
+.magic--button--animation:hover::after {
+    left: 0;
+}
+
+
+/*****************************                                          ***********/
+/*****************************        @media (max-width: 768px)         ***********/
+/*****************************                                          ***********/
+/*****************************                                          ***********/
+
+@media (max-width: 767px) {
+
+    .magic--button--animation {
+        width: 80vw;
+        height: 12vh;
+        font-size: 20px;
+        padding: 4px 52px;
+        margin: 4vh;
+    }
+}
