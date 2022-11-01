@@ -46,4 +46,31 @@
     height: auto;
     display: flex;
     justify-content: center;
+    background-color: #1521a5;
+}
+
+.bookTitleAndImage {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+}
+
+.bookTitleAndImage .name {
+    color: white;
+    padding: 5px 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description-paragraph {
+    color: white;
+    padding: 18px;
+}
+
+.description-details {
+    color: rgb(138, 219, 32);
 }

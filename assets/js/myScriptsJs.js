@@ -15,11 +15,9 @@ function createAnimalTradingCardHTML(animal) {
                 <img src="./assets/img/${animal.name}.jpg" alt="${animal.name}" class="picture">
             </div>
             <div class="description">
-                <ul class="details">
-                    <li><span class="bold">Scientific Name</span>: ${animal.scientificName} </li>
-                    <li><span class="bold">Average Lifespan</span>: ${animal.lifespan} </li>
-                    <li><span class="bold">Average Speed</span>: ${animal.speed} </li>
-                </ul>
+                    <p class="description-paragraph"><span class="description-details">Scientific Name</span>: ${animal.scientificName} </p>
+                    <p class="description-paragraph"><span class="description-details">Average Lifespan</span>: ${animal.lifespan} </p>
+                    <p class="description-paragraph"><span class="description-details">Average Speed</span>: ${animal.speed} </p>
             </div>
         </div>`;
     return cardHTML
