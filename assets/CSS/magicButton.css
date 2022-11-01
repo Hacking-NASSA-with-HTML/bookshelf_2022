@@ -13,7 +13,10 @@
     overflow: hidden;
     padding: 4px 52px;
     margin: 50px;
-    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+    outline: none;
 }
 
 .magic--button--animation::before,
@@ -38,6 +41,15 @@
 .magic--button--animation:hover {
     color: #ffffff;
     z-index: 1;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.magic--button--animation:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+    outline: 2px solid red;
 }
 
 .magic--button--animation:hover::before,
