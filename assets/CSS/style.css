@@ -40,3 +40,10 @@
 #main {
     background-color: #0b0b46;
 }
+
+.bookItem {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
