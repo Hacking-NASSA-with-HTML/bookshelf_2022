@@ -22,7 +22,5 @@ function createAnimalTradingCardHTML(animal) {
         </div>`;
     return cardHTML
 }
-// createAnimalTradingCardHTML(cheetah)
-// console.log(createAnimalTradingCardHTML(cheetah));
 
 generatedCard.innerHTML = createAnimalTradingCardHTML(cheetah)

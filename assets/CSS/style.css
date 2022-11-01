@@ -57,6 +57,7 @@
 
 .bookTitleAndImage .name {
     color: white;
+    font-size: 18px;
     padding: 5px 10px;
 }
 
@@ -68,9 +69,11 @@
 
 .description-paragraph {
     color: white;
+    font-size: 16px;
     padding: 18px;
 }
 
 .description-details {
     color: #8adb20;
+    font-size: 14px;
 }
