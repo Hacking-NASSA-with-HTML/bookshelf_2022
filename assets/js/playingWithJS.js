@@ -1,11 +1,5 @@
 
-const grabTheMainButton = document.getElementById('addBookButtonDiv')
-
-// grabTheMainButton.addEventListener('click', greeting)
-
-// function greeting() {
-//     console.log('Hi !')
-// }
+const grabTheMainButton = document.getElementById('buttonToAddNewBook')
 
 const warehouse = [
     {
@@ -44,7 +38,6 @@ const posts = books.map(book => `
         </div>
     </div>
     `)
-// document.querySelector('#bookObjectKeeper').innerHTML = posts.join().trim()
 
 grabTheMainButton.addEventListener('click', addBookToShelf)
 let counter = 0;
