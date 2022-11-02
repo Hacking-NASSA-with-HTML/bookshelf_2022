@@ -9,6 +9,12 @@ const grabTheMainButton = document.getElementById('addBookButtonDiv')
 
 const warehouse = [
     {
+        title: 'Book Title-123',
+        content: 'Lorem ipsum dolor sit amet',
+        date: '2009'
+    },
+
+    {
         title: 'Book Title-456',
         content: 'the quick brown fox jumped',
         date: '2018'
@@ -21,13 +27,7 @@ const warehouse = [
     }
 ]
 
-const books = [
-    {
-        title: 'Book Title-123',
-        content: 'Lorem ipsum dolor sit amet',
-        date: '2009'
-    }
-]
+const books = []
 
 const posts = books.map(book => `
     <div class="bookItem">
