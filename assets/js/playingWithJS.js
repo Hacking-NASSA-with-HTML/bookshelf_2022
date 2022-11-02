@@ -9,35 +9,36 @@ const grabTheMainButton = document.getElementById('addBookButtonDiv')
 
 const warehouse = [
     {
-        title: 'this-is-title-456',
+        title: 'Book Title-456',
         content: 'the quick brown fox jumped',
-        date: '18.2.2028'
+        date: '2018'
     },
 
     {
-        title: 'this-is-title-789',
-        content: 'the jumped fox fell in a pit',
-        date: '19.12.2020'
+        title: 'Book Title-789',
+        content: 'The jumped fox fell in a pit',
+        date: '2020'
     }
 ]
 
 const books = [
     {
-        title: 'this-is-title-123',
+        title: 'Book Title-123',
         content: 'Lorem ipsum dolor sit amet',
-        date: '12.8.2009'
-    },
+        date: '2009'
+    }
 ]
 
 const posts = books.map(book => `
-  <div class="bookItem">
-            <div class="bookTitleAndImage">
-                <h3 class="name">${book.title}</h3>
-                <p class="description-paragraph">${book.content}</p>
-                <p class="description-paragraph">${book.date}</p>
-            </div>
+    <div class="bookItem">
+        <div class="bookTitleAndImage">
+            <h3 class="name">${book.title}</h3>
+            <p class="description-paragraph">${book.content}</p>
+            <p class="description-paragraph">${book.date}</p>
         </div>
-        `)
+    </div>
+    `)
+// document.querySelector('#bookObjectKeeper').innerHTML = posts.join().trim()
 
 grabTheMainButton.addEventListener('click', addBookToShelf)
 let counter = 0;
@@ -58,7 +59,7 @@ function addBookToShelf() {
         </div>
         `)
     counter++
-    document.querySelector('#bookObjectKeeper').innerHTML = posts.join();
+    document.querySelector('#bookKeeperDiv').innerHTML = posts.join().trim()
 }
 
-document.querySelector('#bookObjectKeeper').innerHTML = posts.join();
+document.querySelector('#bookKeeperDiv').innerHTML = posts.join().trim()
