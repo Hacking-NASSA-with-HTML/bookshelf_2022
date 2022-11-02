@@ -39,5 +39,5 @@ const posts = books.map(book => `
 
 grabTheMainButton.addEventListener('click', addBookToShelf)
 function addBookToShelf() {
-    document.querySelector('#bookObjectKeeper').innerHTML = posts.join('\n');
+    document.querySelector('#bookObjectKeeper').innerHTML = posts.join();
 }
